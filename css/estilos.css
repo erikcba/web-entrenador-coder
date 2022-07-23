@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#grilla {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+.grid__formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "inputs textarea"
+    "objetivos textarea"
+    "planes textarea"
+    "botones botones";
+    justify-items: center;
+    align-items: center;
+}
+
+header{
+    background-color: white;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+p{
+    font-size: 1.25em ;
+    font-family: 'roboto', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: crimson;
+}
+
+.navegacion{
+    display: flex;
+    text-align: center;
+    padding: 20px 25px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu{
+    display: flex;
+    text-align: center;
+}
+
+.logo{
+    font-size: 2em;
+    color: crimson;
+}
+
+
+.titulo {
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.principal{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    , url("/imagenes/banner_pag.jpg");
+    background-size: cover;
+    background-position: center center;
+    
+
+}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 1px ;
+    box-shadow: 2px 2px 10px black;
+    color: white;
+    background-color: rgb(250, 5, 54);
+}
+
+button:hover{
+    background-color: rgb(143, 15, 41) ;
+}
+
+.contenedor{
+    padding: 150px 12px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.subtitulo{
+   font-size: 45px;
+   margin-bottom: 30px;
+   text-align: initial;
+}
+
+.texto{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.video{
+    padding-left: 30px;
+}
+
+footer{
+    display: flex;
+    color: darkgrey;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+}
+
+.titulo__opciones{
+    font-size: 50px;
+    padding-top: 150px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    align-content: center;
+    background-color: rgb(31, 31, 31);
+}
+
+.opciones {
+    background-color: rgb(31, 31, 31);
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-bottom: 60px;
+}
+
+.carta h3{
+    text-align: center;
+    padding: 25px;
+    font-size: 30px;
+}
+
+.carta:first-child{
+    background-image: url("../imagenes/banner_novato.jpg");
+    background-size: 100% 75px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+}
+
+.carta:nth-child(2){
+    background-image: url("../imagenes/banner_pro.jpg");
+    background-size: 100% 75px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+}
+
+.carta:nth-child(3){
+    background-image: url("../imagenes/banner_elite.jpg");
+    background-size: 100% 75px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+}
+
+.carta{
+    background-color: rgb(67, 67, 67);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    height: 500px;
+    width: 350px;
+    align-items: center;
+    text-align: center;
+}
+
+.carta ul{
+    padding-bottom: 15px;
+}
+
+.opciones li{
+    text-align: left;
+    margin: 0px;
+    font-weight: bold;
+    line-height: 2em;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+.quienSoy{
+    display:flex ;
+    height: 750px;
+    background-color: rgb(31, 31, 31);
+    padding-top: 100px;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.quienSoy .img-container{
+    background-image: url("../imagenes/IMG_6676_\(2\).jpg");
+     background-size: cover;
+     background-position: center center;
+     height: 500px;
+     width: 500px;
+}
+
+.quienSoy .texto{
+    color: white;
+    
+}
+
+.color-acento{
+    color: crimson;
+}
+
+.quienSoy .texto h2{
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+.contenedor__caract{
+    height: 750px;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor__caract .img-contenedor{
+    background-image: url("../imagenes/entrena_online.jpg");
+        background-size: contain;
+        background-position: center center;
+        height: 700px;
+        width: 700px;
+    background-repeat: no-repeat;
+        
+}
+
+.contenedor__caract .items{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.items li{
+    padding:5px;
+}
+
+.encabezado__form{
+    height: 200px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 35px;
+}
+
+.sub_encabezado_form{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.contenedor__form{
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.formulario{
+    background-color: rgb(31, 31, 31);
+    color: white;
+    font-size: 25px;
+}
+
+.formulario__inputs{
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    grid-area: inputs;
+}
+
+.formulario__objetivos p{
+    font-weight: bold;
+    font-size: 25px;
+    padding: 15px;
+}
+
+.formulario__objetivos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-area: objetivos;
+}
+
+.formulario__planes{
+    grid-area: planes;
+}
+
+.formulario__textarea{
+    grid-area: textarea;
+    border-radius: 10px;
+}
+
+.formulario__botones {
+    grid-area: botones
+}
+
+@media screen and (max-width: 1023px) {
+    .contenedor{
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 100px;
+    }
+
+    .opciones{
+        height: 1700px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .quienSoy{
+        flex-direction: column;
+        height: 900px;
+    }
+
+    .quienSoy .img-container{
+        height: 400px;
+        width: 400px;
+    }
+
+    .contenedor__caract .img-contenedor{
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    
+    .navegacion{
+        flex-direction: column;
+    }
+
+    .menu{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .principal{
+        padding-top: 200px;
+    }
+
+    .titulo__opciones{
+        padding-top:200px;
+    }
+
+    .quienSoy{
+        padding-top: 200px;
+    }
+
+    .contenedor__caract{
+        padding-top: 200px;
+        flex-direction: column;
+    }
+
+    .contenedor__caract .img-contenedor{
+        height: 300px;
+        width: 300px;
+    }
+}
