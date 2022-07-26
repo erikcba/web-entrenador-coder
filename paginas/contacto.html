@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrenamiento Personalizado</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
 
 <body>
 
-    <header class="container">
+    <header>
         <div class="navegacion">
             <a href="../index.html" class="logo">Erik Trainer</a>
             <nav>
@@ -38,7 +39,7 @@
         </div>
     </header>
     
-    <main>
+    <main class="contacto__container">
         
         <section class="encabezado__form">
             <h1>¡Estas a un paso de lograr tus objetivos!</h1>
@@ -48,71 +49,89 @@
             <h4>Completa el siguiente formulario si quieres que trabajemos juntos</h4>
         </div>
         
-        
-            <section class="contenedor__form">
-                <form action="" class="formulario">
-                    <div class="grid__formulario">
-                        <div class="formulario__inputs">
-                            <div class="nombre">
-                                <label for="nombre">Nombre: </label>
-                                <input type="text" id="nombre" name="nombre" placeholder="Ingrese el nombre" required>
-                             </div>
-                             <div class="email">
-                                <label for="email">Email: </label>
-                                <input type="email" placeholder="Email" required>
-                            </div>
+        <section class="formulario__boots">
+            <form action="">
+                <div class="row innputs__boots__form" >
+                    <div class="col-12 col-md-6">
+                        <div class="inputs__boots">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tu nombre" required>
                         </div>
+                    </div>
+                    </div>
 
-                        <div class="formulario__objetivos">
-                            <p>Selecciona tu objetivo</p>
-                            <ul>
-                                <li>
-                                    <label for="">Perder peso</label>
-                                    <input type="radio" name="objetivo" value="perder peso" required>
-                                </li>
-
-                                <li>
-                                    <label for="">Aumentnar masa muscular</label>
-                                    <input type="radio" name="objetivo" value="aumentar masa muscular">
-                            </li>
-
-                            <li>
-                                <label for="">Salud</label>
-                                <input type="radio" name="objetivo" value="salud">
-                                </li>
-                            </ul>
+                    <div class="col-12 col-md-6">
+                        <div class="inputs__boots">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Tu mail</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
                         </div>
+                    </div>
+                    </div>
+                </div>  
+                
 
-                        <div class="formulario__planes">
-                            <label for="">Selecciona tu plan: </label>
-                            <select name="Planes" id="" required>
-                                <option value="">Seleccione...</option>
-                                <option value="Novato">Novato</option>
-                                <option value="Pro">Pro</option>
-                                <option value="Elite">Elite</option>
-                            </select>
+                <h3>Selecciona tu objetivo</h3>
+                <div class="row">
+                    <div class="col-12 col-md-4"></div>
+                    <div class="col-12 col-md-4">
+                        <div class="radio__boots">
+                            <input class="form-check-input" type="radio" name="objetivo" value="perder peso"  >
+                            <label class="form-check-label" for="">
+                            Perder peso
+                            </label>
                         </div>
-
-                        <div class="formulario__textarea">
-                            <label for="dudas">Si tenés alguna inquietud o querés saber más, escribila acá abajo:</label><br>
-                            <div class="caja_texto">
-                                <textarea name="dudas" id="" cols="85" rows="25">Escribe tus dudas aqui...</textarea>
-                            </div>
+                        <div class="radio__boots">
+                            <input class="form-check-input" type="radio" name="objetivo" value="ganar masa muscular" >
+                            <label class="form-check-label" for="">
+                            Ganar masa muscular
+                            </label>
                         </div>
-
-                        <div class="formulario__botones">
-                            <input type="submit" value="Enviar formulario">
-                            <input type="reset" value="Reiniciar formulario">
+                        <div class="radio__boots">
+                            <input class="form-check-input" type="radio" name="objetivo" value="salud" required>
+                            <label class="form-check-label" for="">
+                            Salud
+                            </label>
                         </div>
-                    </div>  
-                </form>
-            </section>
-        
+                    </div>
+                    <div class="col-12 col-md-4"></div>
+                </div>
 
+                <h3>Selecciona tu plan</h3>
+
+                <div class="select__boots">
+                    <div>
+                        <select class="form-select" aria-label="Default select example" >
+                            <option selected >Elige tu plan</option>
+                            <option value="1" >Novato</option>
+                            <option value="2">Pro</option>
+                            <option value="3">Elite</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="textarea__boots">
+                    <label for="exampleFormControlTextarea1" class="form-label"> <strong> Si tienes alguna duda escribela aqui </strong></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                </div>
+
+                <div class="formulario__botones">
+                    <div class="formulario__botones__boton">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                    <div class="formulario__botones__boton">
+                        <button type="reset" class="btn btn-primary">Reiniciar</button>
+                    </div>
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         <p>&copy; Erik Trainer 2022</p>
         <a href="https://www.instagram.com/erik.trainer/" ><img src="../imagenes/instagram_logo.png" alt="instagram" width="40" height="40"></a>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
