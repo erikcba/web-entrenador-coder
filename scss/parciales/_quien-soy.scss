@@ -1,0 +1,31 @@
+.quienSoy{
+    display:flex ;
+    height: 750px;
+    background-color: rgb(31, 31, 31);
+    padding-top: 100px;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.quienSoy .img-container{
+    background-image: url("../imagenes/IMG_6676_\(2\).jpg");
+     background-size: cover;
+     background-position: center center;
+     height: 500px;
+     width: 500px;
+}
+
+.quienSoy .texto{
+    color: white;
+    
+}
+
+.color-acento{
+    color: crimson;
+}
+
+.quienSoy .texto h2{
+    font-size: 35px;
+    padding-bottom: 10px;
+}

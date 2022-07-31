@@ -1,0 +1,102 @@
+.encabezado__form{
+    height: 200px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 35px;
+}
+.encabezado__form h1{
+    margin-top: 25px;
+}
+
+.sub_encabezado_form{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: crimson;
+    color: bisque;
+
+}
+
+.sub_encabezado_form h4{
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.contenedor__form{
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.formulario{
+    background-color: rgb(31, 31, 31);
+    color: white;
+    font-size: 25px;
+}
+
+.contacto__container{
+    width: 100%;
+}
+
+.formulario__boots{
+    background-color: rgb(31, 31, 31);
+    color:bisque;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.formulario__boots h3{
+    font-weight: bold;
+    text-align: center;
+}
+
+.inputs__boots{
+    width: 300px;
+    /* margin-left: 200px; */
+    padding-top: 50px;
+    font-weight: bold;
+}
+
+.col-12 , .col-md-4{
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio__boots{
+    padding: 20px 0;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.select__boots{
+    margin: 50px;
+    margin: 25px 500px;
+}
+
+.textarea__boots{
+    margin: 50px;
+}
+
+.formulario__botones{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario__botones__boton{
+    padding: 10px;
+}
+
+.formulario__botones__boton button{
+    background-color: crimson;
+    border-color: crimson;
+}
+
+.formulario__botones__boton button:hover{
+    background-color: rgb(143, 15, 41) ;
+    border-color: rgb(143, 15, 41)
+}

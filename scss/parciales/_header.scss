@@ -1,0 +1,31 @@
+header{
+    background-color: white;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    grid-area: header;
+}
+
+header a:hover{
+    color: crimson;
+}
+
+.navegacion{
+    display: flex;
+    text-align: center;
+    padding: 20px 25px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu{
+    display: flex;
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.logo{
+    font-size: 2em;
+    color: crimson;
+}

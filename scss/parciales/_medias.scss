@@ -1,0 +1,119 @@
+@media screen and (max-width: 1023px) {
+    .contenedor{
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 100px;
+    }
+
+    .opciones{
+        height: 1700px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .quienSoy{
+        flex-direction: column;
+        height: 900px;
+    }
+
+    .quienSoy .img-container{
+        height: 400px;
+        width: 400px;
+    }
+
+    .contenedor__caract .img-contenedor{
+        height: 400px;
+        width: 400px;
+    }
+
+    .inputs__boots{
+        margin-left: 0;
+    }
+
+    .row{
+        width: 100%;
+    }
+
+    .select__boots{
+        margin: 0px 50px;
+    }
+
+    .innputs__boots__form{
+        margin: 0px;
+    }
+
+    .ventajas{
+        background-color: rgb(31, 31, 31);
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .ventajas__imagen{
+        object-fit: cover;
+        border-radius: 5px;
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    
+    .navegacion{
+        flex-direction: column;
+    }
+
+    .menu{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .principal{
+        padding-top: 200px;
+    }
+
+    .titulo__opciones{
+        padding-top:200px;
+    }
+
+    .quienSoy{
+        padding-top: 200px;
+    }
+
+    .contenedor__caract{
+        padding-top: 200px;
+        flex-direction: column;
+    }
+
+    .contenedor__caract .img-contenedor{
+        height: 300px;
+        width: 300px;
+    }
+
+    .ventajas{
+        background-color: rgb(31, 31, 31);
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .ventajas__imagen{
+        margin-left: 150px;
+        object-fit: cover;
+        border-radius: 5px;
+        width: 200px;
+        height: 200px;
+    }
+}
