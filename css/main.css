@@ -6,9 +6,7 @@
 
 #grilla {
   display: grid;
-  grid-template-areas: "header"
- "main"
- "footer"; }
+  grid-template-areas: "header" "main" "footer"; }
 
 main {
   grid-area: main; }
@@ -29,7 +27,6 @@ a {
 header {
   background-color: white;
   margin: 0;
-  position: fixed;
   width: 100%;
   grid-area: header; }
 
@@ -127,8 +124,8 @@ footer {
 
 .titulo__opciones {
   font-size: 50px;
-  padding-top: 150px;
-  height: 300px;
+  padding-top: 80px;
+  height: 230px;
   display: flex;
   justify-content: center;
   color: white;
@@ -147,7 +144,8 @@ footer {
 .carta h3 {
   text-align: center;
   padding: 25px;
-  font-size: 30px; }
+  font-size: 30px;
+  color: black; }
 
 .carta:first-child {
   background-image: url("../imagenes/banner_novato.jpg");
@@ -174,7 +172,8 @@ footer {
   height: 500px;
   width: 350px;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  color: white; }
 
 .carta ul {
   padding-bottom: 15px; }
@@ -374,7 +373,8 @@ footer {
   .principal {
     padding-top: 200px; }
   .titulo__opciones {
-    padding-top: 200px; }
+    height: 100px;
+    padding-top: 15px; }
   .quienSoy {
     padding-top: 200px; }
   .contenedor__caract {

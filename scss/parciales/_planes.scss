@@ -1,7 +1,7 @@
 .titulo__opciones{
     font-size: 50px;
-    padding-top: 150px;
-    height: 300px;
+    padding-top: 80px;
+    height: 230px;
     display: flex;
     justify-content: center;
     color: white;
@@ -23,6 +23,7 @@
     text-align: center;
     padding: 25px;
     font-size: 30px;
+    color: black;
 }
 
 .carta:first-child{
@@ -54,6 +55,7 @@
     width: 350px;
     align-items: center;
     text-align: center;
+    color: white;
 }
 
 .carta ul{
