@@ -1,6 +1,5 @@
 .encabezado__form{
-    height: 200px;
-    padding-top: 100px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -23,6 +22,10 @@
     margin: 0;
     padding: 10px;
     font-weight: bold;
+}
+
+.row {
+    width: 100%;
 }
 
 .contenedor__form{
@@ -79,7 +82,15 @@
 }
 
 .textarea__boots{
-    margin: 50px;
+    margin: 50px 300px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textarea__boots p{
+    font-size: 1.75rem;
 }
 
 .formulario__botones{

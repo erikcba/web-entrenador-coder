@@ -100,6 +100,9 @@ button:hover {
 .video {
   padding-left: 30px; }
 
+.container .container__ventajas, .row {
+  margin: 0; }
+
 .ventajas {
   background-color: #1f1f1f;
   display: flex;
@@ -236,8 +239,7 @@ footer {
   padding: 5px; }
 
 .encabezado__form {
-  height: 200px;
-  padding-top: 100px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -257,6 +259,9 @@ footer {
   margin: 0;
   padding: 10px;
   font-weight: bold; }
+
+.row {
+  width: 100%; }
 
 .contenedor__form {
   height: 750px;
@@ -303,7 +308,14 @@ footer {
   margin: 25px 500px; }
 
 .textarea__boots {
-  margin: 50px; }
+  margin: 50px 300px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.textarea__boots p {
+  font-size: 1.75rem; }
 
 .formulario__botones {
   display: flex;
@@ -365,21 +377,42 @@ footer {
     height: 200px; } }
 
 @media screen and (max-width: 430px) {
+  header {
+    width: fit-content; }
   .navegacion {
-    flex-direction: column; }
+    flex-direction: column;
+    width: 425px; }
   .menu {
     flex-direction: column;
     justify-content: space-evenly; }
   .principal {
-    padding-top: 200px; }
+    margin: 0;
+    width: 425px; }
+  .contenedor {
+    width: 425px; }
+  .contenedor .video {
+    width: 425px;
+    padding-left: 0; }
+  .contenedor .video iframe {
+    width: 100%; }
   .titulo__opciones {
     height: 100px;
-    padding-top: 15px; }
+    padding: 10px; }
+  .titulo__opciones h3 {
+    height: 200px; }
   .quienSoy {
-    padding-top: 200px; }
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    font-size: 1rem;
+    height: 100%; }
+  .quienSoy .texto {
+    padding-bottom: 20px; }
   .contenedor__caract {
-    padding-top: 200px;
-    flex-direction: column; }
+    flex-direction: column;
+    height: 600px;
+    justify-content: space-evenly; }
   .contenedor__caract .img-contenedor {
     height: 300px;
     width: 300px; }
@@ -393,7 +426,7 @@ footer {
     width: 100%;
     padding: 20px; }
   .ventajas__imagen {
-    margin-left: 150px;
+    margin-left: 70px;
     object-fit: cover;
     border-radius: 5px;
     width: 200px;

@@ -66,9 +66,14 @@
 }
 
 @media screen and (max-width: 430px) {
+
+    header {
+        width: fit-content;
+    }
     
     .navegacion{
         flex-direction: column;
+        width: 425px;
     }
 
     .menu{
@@ -77,21 +82,49 @@
     }
 
     .principal{
-        padding-top: 200px;
+        margin: 0;
+        width: 425px;
+    }
+
+    .contenedor{
+        width: 425px;
+    }
+
+    .contenedor .video{
+        width: 425px;
+        padding-left: 0;
+    }
+
+    .contenedor .video iframe{
+        width: 100%;
     }
 
     .titulo__opciones{
         height: 100px;
-        padding-top: 15px;
+        padding: 10px;
+    }
+
+    .titulo__opciones h3{
+        height: 200px;
     }
 
     .quienSoy{
-        padding-top: 200px;
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        font-size: 1rem;
+        height: 100%;
+    }
+
+    .quienSoy .texto{
+        padding-bottom: 20px;
     }
 
     .contenedor__caract{
-        padding-top: 200px;
         flex-direction: column;
+        height: 600px;
+        justify-content: space-evenly;
     }
 
     .contenedor__caract .img-contenedor{
@@ -111,7 +144,7 @@
     }
     
     .ventajas__imagen{
-        margin-left: 150px;
+        margin-left: 70px;
         object-fit: cover;
         border-radius: 5px;
         width: 200px;
