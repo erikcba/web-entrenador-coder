@@ -8,7 +8,7 @@
     font-weight: bold;
     align-content: center;
     background-color: rgb(31, 31, 31);
-    // margin-top: 98px;
+    
 }
 
 .opciones {
@@ -20,54 +20,51 @@
     padding-bottom: 60px;
 }
 
-.carta h3{
-    text-align: center;
-    padding: 25px;
-    font-size: 30px;
-    color: black;
-}
-
-.carta:first-child{
-    background-image: url("../imagenes/banner_novato.jpg");
-    background-size: 100% 75px;
-        background-repeat: no-repeat;
-        background-position-y: 0;
-}
-
-.carta:nth-child(2){
-    background-image: url("../imagenes/banner_pro.jpg");
-    background-size: 100% 75px;
-        background-repeat: no-repeat;
-        background-position-y: 0;
-}
-
-.carta:nth-child(3){
-    background-image: url("../imagenes/banner_elite.jpg");
-    background-size: 100% 75px;
-        background-repeat: no-repeat;
-        background-position-y: 0;
-}
-
-.carta{
+.carta {
     background-color: rgb(67, 67, 67);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    border-radius: 15px;
-    height: 500px;
-    width: 350px;
-    align-items: center;
-    text-align: center;
-    color: white;
-}
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+	border-radius: 15px;
+	height: 500px;
+	width: 350px;
+	align-items: center;
+	text-align: center;
+	color: white;
 
-.carta ul{
-    padding-bottom: 15px;
-}
+	h3 {
+		text-align: center;
+		padding: 25px;
+		font-size: 30px;
+		color: black;
+	}
+	&:first-child {
+		background-image: url("../imagenes/banner_novato.jpg");
+		background-size: 100% 75px;
+		background-repeat: no-repeat;
+		background-position-y: 0;
+	}
+	&:nth-child(2) {
+		background-image: url("../imagenes/banner_pro.jpg");
+		background-size: 100% 75px;
+		background-repeat: no-repeat;
+		background-position-y: 0;
+	}
+	&:nth-child(3) {
+		background-image: url("../imagenes/banner_elite.jpg");
+		background-size: 100% 75px;
+		background-repeat: no-repeat;
+		background-position-y: 0;
+	}
+	
+	ul {
+		padding-bottom: 15px;
+	}
 
-.opciones li{
-    text-align: left;
-    margin: 0px;
-    font-weight: bold;
-    line-height: 2em;
-    padding-left: 15px;
-    margin-bottom: 10px;
+    li{
+        text-align: left;
+        margin: 0px;
+        font-weight: bold;
+        line-height: 2em;
+        padding-left: 15px;
+        margin-bottom: 10px;
+    }
 }

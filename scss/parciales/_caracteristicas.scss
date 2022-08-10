@@ -1,25 +1,22 @@
-.contenedor__caract{
-    height: 750px;
-    background-color: rgb(31, 31, 31);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.contenedor__caract .img-contenedor{
-    background-image: url("../imagenes/entrena_online.jpg");
-        background-size: contain;
-        background-position: center center;
-        height: 700px;
-        width: 700px;
-    background-repeat: no-repeat;
-        
-}
-
-.contenedor__caract .items{
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
+.contenedor__caract {
+	height: 750px;
+	background-color: rgb(31, 31, 31);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	.img-contenedor {
+		background-image: url("../imagenes/entrena_online.jpg");
+		background-size: contain;
+		background-position: center center;
+		height: 700px;
+		width: 700px;
+		background-repeat: no-repeat;
+	}
+	.items {
+		color: white;
+		font-weight: bold;
+		font-size: 20px;
+	}
 }
 
 .items li{

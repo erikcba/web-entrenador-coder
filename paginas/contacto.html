@@ -38,44 +38,16 @@
             </nav>
         </div>
     </header>
-    
-    <main class="contacto__container">
-        
-        <section class="encabezado__form">
-            <h1>¡Estas a un paso de lograr tus objetivos!</h1>
-        </section>
-
-        <div class="sub_encabezado_form">
-            <h4>Completa el siguiente formulario si quieres que trabajemos juntos</h4>
-        </div>
-        
-        <section class="formulario__boots">
-            <form action="">
-                <div class="row " >
-                    <div class="col-12 col-md-6 d-flex justify-content-end">
-                        <div class="inputs__boots">
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tu nombre" required>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 d-flex justify-content-start">
-                        <div class="inputs__boots">
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Tu mail</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
-                        </div>
-                    </div>
-                    </div>
-                </div>  
-                
-
-                <h3>Selecciona tu objetivo</h3>
-                <div class="row">
-                    <div class="col-12 col-md-3"></div>
-                    <div class="col-12 col-md-6 d-flex justify-content-evenly">
+        <section class="contenedor__formulario">
+            <h2 class="titulo__contacto">Logra el cambio que buscas</h2>
+            <form class="form" action="https://formspree.io/f/mbjbrqek" method="POST">
+                <div class="form__container">
+                    <h2 class="form__tittle">Contactame</h2>
+                    <input type="text" class="form__input" placeholder="Nombre: " name="name" required>
+                    <input type="email" class="form__input" placeholder="Email: " name="_replyto" required>
+                    
+                    <div class="contenedor__radio">
+                        <h3 class="titulo__objetivos">Selecciona tu objetivo</h3>
                         <div class="radio__boots">
                             <input class="form-check-input" type="radio" name="objetivo" value="perder peso"  >
                             <label class="form-check-label" for="">
@@ -95,34 +67,26 @@
                             </label>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3"></div>
-                </div>
-
-                <h3>Selecciona tu plan</h3>
-
-                <div class="select__boots">
-                    <div>
-                        <select class="form-select" aria-label="Default select example" >
-                            <option selected >Elige tu plan</option>
-                            <option value="1" >Novato</option>
-                            <option value="2">Pro</option>
-                            <option value="3">Elite</option>
-                        </select>
+                    
+                    <div class="contenedor__opciones--planes">
+                        <h3 class="titulo__plan">Selecciona tu plan</h3>
+        
+                        <div class="select__plan">
+                            <select class="form-select" aria-label="Default select example" required>
+                                <option value="">Elige tu plan</option>
+                                <option value="1">Novato</option>
+                                <option value="2">Pro</option>
+                                <option value="3">Elite</option>
+                            </select>
+                        </div>
                     </div>
-                </div>
-
-                <div class="textarea__boots">
-                    <label for="exampleFormControlTextarea1" class="form-label"> <strong><p> Si tienes alguna duda escribela aqui </p></strong></label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
-                </div>
-
-                <div class="formulario__botones">
-                    <div class="formulario__botones__boton">
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </div>
-                    <div class="formulario__botones__boton">
-                        <button type="reset" class="btn btn-primary">Reiniciar</button>
-                    </div>
+        
+                
+                    <h3 class="titulo__mensaje">Si tienes alguna duda, escribela aqui</h3>
+                    <textarea class="form__input form__input--message" placeholder="Mensaje" name="message"></textarea>
+                
+        
+                    <input type="submit" value="Enviar" class="form__cta">
                 </div>
             </form>
         </section>

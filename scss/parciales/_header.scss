@@ -1,12 +1,13 @@
-header{
-    background-color: white;
-    margin: 0;
-    width: 100%;
-    grid-area: header;
-}
-
-header a:hover{
-    color: crimson;
+header {
+	background-color: white;
+	margin: 0;
+	width: 100%;
+	grid-area: header;
+	a {
+		&:hover {
+			color: crimson;
+		}
+	}
 }
 
 .navegacion{
