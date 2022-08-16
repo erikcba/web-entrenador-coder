@@ -82,7 +82,8 @@ button {
 .contenedor {
   padding: 150px 12px;
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  align-items: center; }
 
 .subtitulo {
   font-size: 45px;
@@ -346,12 +347,12 @@ footer {
 
 @media screen and (max-width: 1023px) {
   .contenedor {
-    height: 900px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-top: 100px; }
+    padding-top: 100px;
+    padding-bottom: 50px; }
   .opciones {
     height: 1700px;
     flex-direction: column;
@@ -429,6 +430,9 @@ footer {
     height: auto;
     width: 100%;
     padding: 20px; }
+  .container .container__ventajas, .row {
+    height: 710px;
+    align-content: space-between; }
   .ventajas__imagen {
     margin-left: 70px;
     object-fit: cover;
