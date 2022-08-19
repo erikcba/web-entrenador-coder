@@ -431,6 +431,8 @@ footer {
       margin-bottom: 30px; }
   .alejar-footer {
     height: 35vh; }
+  .col-12 {
+    width: auto; }
   .ventajas {
     background-color: #1f1f1f;
     display: flex;
