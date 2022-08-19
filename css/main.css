@@ -62,7 +62,7 @@ header {
   flex-direction: column;
   justify-content: center;
   height: 90vh;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/imagenes/banner_pag.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/banner_pag.jpg");
   background-size: cover;
   background-position: center center; }
 
@@ -101,7 +101,11 @@ button {
   padding-left: 30px; }
 
 .container .container__ventajas, .row {
-  margin: 0; }
+  margin: 0;
+  justify-content: space-evenly; }
+
+.col-12 {
+  width: 350px; }
 
 .ventajas {
   background-color: #1f1f1f;
@@ -113,6 +117,9 @@ button {
     height: 100%; */
     object-fit: cover;
     border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    align-items: center;
     /* max-width: 400px;
     max-height: 400px; */ }
 
@@ -381,30 +388,25 @@ footer {
     width: 200px;
     height: 200px; } }
 
-@media screen and (max-width: 430px) {
-  header {
-    width: fit-content; }
+@media screen and (max-width: 600px) {
   .navegacion {
-    flex-direction: column;
-    width: 425px; }
+    flex-direction: column; }
   .menu {
     flex-direction: column;
     justify-content: space-evenly; }
   .principal {
-    margin: 0;
-    width: 425px; }
-  .contenedor {
-    width: 425px; }
-    .contenedor .video {
-      width: 425px;
-      padding-left: 0; }
-      .contenedor .video iframe {
-        width: 100%; }
+    margin: 0; }
+  .contenedor .video {
+    padding-left: 0; }
+    .contenedor .video iframe {
+      width: 100%; }
   .titulo__opciones {
     height: 100px;
     padding: 10px; }
     .titulo__opciones h3 {
       height: 200px; }
+  .carta {
+    width: auto; }
   .quienSoy {
     padding-top: 20px;
     padding-left: 30px;
@@ -414,13 +416,21 @@ footer {
     height: 100%; }
     .quienSoy .texto {
       padding-bottom: 20px; }
+    .quienSoy .img-container {
+      display: none; }
+    .quienSoy h2 {
+      text-align: center; }
   .contenedor__caract {
     flex-direction: column;
-    height: 600px;
-    justify-content: space-evenly; }
+    flex-direction: column-reverse;
+    height: auto; }
     .contenedor__caract .img-contenedor {
-      height: 300px;
+      height: 250px;
       width: 300px; }
+    .contenedor__caract .items {
+      margin-bottom: 30px; }
+  .alejar-footer {
+    height: 35vh; }
   .ventajas {
     background-color: #1f1f1f;
     display: flex;
@@ -431,11 +441,12 @@ footer {
     width: 100%;
     padding: 20px; }
   .container .container__ventajas, .row {
-    height: 710px;
-    align-content: space-between; }
+    padding: 10px 0;
+    align-content: space-between;
+    height: auto; }
   .ventajas__imagen {
-    margin-left: 70px;
     object-fit: cover;
     border-radius: 5px;
-    width: 200px;
-    height: 200px; } }
+    width: auto;
+    height: auto;
+    padding: 5px 0; } }

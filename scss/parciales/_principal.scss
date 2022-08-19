@@ -17,7 +17,7 @@
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    , url("/imagenes/banner_pag.jpg");
+    , url("../imagenes/banner_pag.jpg");
     background-size: cover;
     background-position: center center;
 
@@ -66,6 +66,11 @@ button{
 
 .container .container__ventajas, .row {
     margin: 0;
+    justify-content: space-evenly;
+}
+
+.col-12{
+    width: 350px;
 }
 
  
@@ -82,9 +87,13 @@ button{
     height: 100%; */
     object-fit: cover;
     border-radius: 5px;
+    width: 300px;
+    height: 300px; 
+    align-items: center;
     /* max-width: 400px;
     max-height: 400px; */
-}
+    }
+
 }
 
 footer{
