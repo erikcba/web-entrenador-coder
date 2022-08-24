@@ -32,6 +32,10 @@ header {
   header a:hover {
     color: crimson; }
 
+.bar-btn {
+  font-size: 25px;
+  cursor: pointer; }
+
 .navegacion {
   display: flex;
   text-align: center;
@@ -44,6 +48,11 @@ header {
   text-align: center;
   padding-left: 0;
   margin-bottom: 0; }
+  .menu__item--oculto {
+    display: none; }
+
+.header__icono {
+  display: none; }
 
 .logo {
   font-size: 2em;
@@ -388,12 +397,28 @@ footer {
     width: 200px;
     height: 200px; } }
 
-@media screen and (max-width: 600px) {
-  .navegacion {
-    flex-direction: column; }
+@media screen and (max-width: 599px) {
+  .nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 100vh;
+    width: 80%;
+    z-index: 1000000; }
   .menu {
     flex-direction: column;
-    justify-content: space-evenly; }
+    justify-content: center;
+    text-align: left;
+    height: 100%;
+    gap: 2rem; }
+    .menu__item--oculto {
+      display: block; }
+  .header__icono {
+    display: block; }
+  .nav:target {
+    display: block; }
   .principal {
     margin: 0; }
   .contenedor .video {

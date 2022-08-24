@@ -9,6 +9,7 @@
     <title>Erik-Trainer - Planes</title>
     <link rel="stylesheet" href="../css/main.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b8ed1cf9c3.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -17,7 +18,13 @@
     <header class="container">
         <div class="navegacion">
             <a href="../index.html" class="logo">Erik Trainer</a>
-            <nav>
+
+            <a href="#abierto" class="header__icono">
+                <i class="fa-solid fa-bars"></i>
+            </a>    
+
+            <nav class="nav" id="abierto">
+            
                 <ul class="menu">
                     <li>
                         <a href="../index.html">Inicio</a>
@@ -37,6 +44,10 @@
                     
                     <li>
                         <a href="contacto.html">Contacto</a>
+                    </li>
+
+                    <li class="menu__item--oculto">
+                        <a href="#cerrado"><i class="fa-solid fa-circle-xmark"></i></a>
                     </li>
                 </ul>
             </nav>

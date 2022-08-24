@@ -8,6 +8,13 @@ header {
 			color: crimson;
 		}
 	}
+
+}
+
+.bar-btn{
+    font-size: 25px;
+    cursor: pointer;
+    
 }
 
 .navegacion{
@@ -23,6 +30,14 @@ header {
     text-align: center;
     padding-left: 0;
     margin-bottom: 0;
+    &__item--oculto{
+        display: none;
+    }
+    
+}
+
+.header__icono{
+    display: none;
 }
 
 .logo{

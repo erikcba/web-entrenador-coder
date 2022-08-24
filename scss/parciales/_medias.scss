@@ -48,15 +48,40 @@
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
 
     .navegacion{
-        flex-direction: column;
+        
+    }
+
+    .nav{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        height: 100vh;
+        width: 80%; 
+        z-index: 1000000;
     }
 
     .menu{
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
+        text-align: left;
+        height: 100%;
+        gap: 2rem;
+        &__item--oculto{
+            display: block;
+        }
+    }
+
+    .header__icono{
+        display: block;
+    }
+
+    .nav:target{
+        display: block;
     }
 
     .principal{
