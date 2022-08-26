@@ -209,8 +209,8 @@ footer {
     background-image: url("../imagenes/IMG_6676_(2).jpg");
     background-size: cover;
     background-position: center center;
-    height: 500px;
-    width: 500px; }
+    height: 400px;
+    width: 400px; }
   .quienSoy .texto {
     color: white; }
     .quienSoy .texto h2 {
@@ -254,10 +254,10 @@ footer {
   padding: 25px 0; }
 
 .form {
-  background-color: crimson;
+  background-color: #f27979;
   border-radius: 1em;
   width: 90%;
-  max-width: 400px;
+  max-width: 800px;
   padding: 3.5em 1.5em;
   margin: auto;
   font-family: sans-serif; }
@@ -398,15 +398,22 @@ footer {
     height: 200px; } }
 
 @media screen and (max-width: 599px) {
+  .nav:target {
+    display: block;
+    left: 0; }
   .nav {
-    display: none;
+    display: block;
+    background-color: white;
     position: fixed;
     top: 0;
-    left: 0;
-    background-color: white;
+    left: -100%;
+    z-index: 1000000;
+    width: 70%;
     height: 100vh;
-    width: 80%;
-    z-index: 1000000; }
+    transition: left 1s; }
+    .nav:target {
+      display: block;
+      left: 0; }
   .menu {
     flex-direction: column;
     justify-content: center;
@@ -416,8 +423,6 @@ footer {
     .menu__item--oculto {
       display: block; }
   .header__icono {
-    display: block; }
-  .nav:target {
     display: block; }
   .principal {
     margin: 0; }
@@ -442,7 +447,8 @@ footer {
     .quienSoy .texto {
       padding-bottom: 20px; }
     .quienSoy .img-container {
-      display: none; }
+      width: 300px;
+      height: 300px; }
     .quienSoy h2 {
       text-align: center; }
   .contenedor__caract {
@@ -476,4 +482,6 @@ footer {
     border-radius: 5px;
     width: auto;
     height: auto;
-    padding: 5px 0; } }
+    padding: 5px 0; }
+  .titulo__contacto {
+    font-size: 1.9em; } }
